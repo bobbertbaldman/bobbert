@@ -1,17 +1,35 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Bobbert – Home</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bobbert • Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <nav>
-    <a href="/">Home</a>
-    <a href="/bio">Bio</a>
-    <a href="/terms">Terms</a>
+    <div class="nav-brand">Bobbert</div>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/bio">Bio</a>
+      <a href="/terms">Terms</a>
+    </div>
   </nav>
+
   <main>
-    <h1>Welcome!</h1>
-    <p>This is my website.</p>
+    <section class="hero">
+      <h1>Hello, I’m Bobbert</h1>
+      <p>Seller • Creator • Professional Bald Man</p>
+      <a class="button" href="/bio">See my links</a>
+    </section>
   </main>
-</body></html>
+
+  <footer>
+    <small>© <span id="year"></span> Bobbert. All rights reserved.</small>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
