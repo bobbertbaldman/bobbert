@@ -1,61 +1,51 @@
 :root{
-  --primary:#6366f1;
-  --primary-dark:#4f46e5;
-  --light:#f8fafc;
-  --text:#1f2937;
+  --primary:  #00bcd4;
+  --bg:       #121212;
+  --bg-alt:   #1e1e1e;
+  --text:     #eaeaea;
+  --text-mut: #b0b0b0;
 }
 
-*{box-sizing:border-box;}
-body{
-  margin:0;
-  font-family:'Inter',system-ui,sans-serif;
-  background:var(--light);
-  color:var(--text);
+*{box-sizing:border-box;margin:0;padding:0;}
+
+html,body{
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,sans-serif;
+  background: var(--bg);
+  color: var(--text);
   line-height:1.6;
 }
 
+a      {color:var(--primary);text-decoration:none;}
+a:hover{text-decoration:underline;}
+
 nav{
-  background:var(--primary);
-  color:#fff;
   display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:0.75rem 1.25rem;
+  gap:1rem;
+  padding:.75rem 1.25rem;
+  background:var(--bg-alt);
+  box-shadow:0 1px 3px rgba(0,0,0,.4);
+  position:sticky;
+  top:0;
+  z-index:10;
 }
-.nav-brand{font-weight:700;font-size:1.25rem;}
-.nav-links a{
-  color:#fff;
-  text-decoration:none;
-  margin-left:1rem;
+
+nav a{
   font-weight:500;
   transition:opacity .15s;
 }
-.nav-links a:hover{opacity:.8;}
+nav a:hover{opacity:.75;}
 
-main{max-width:960px;margin:0 auto;padding:2rem 1.25rem;}
-.hero{text-align:center;padding:4rem 0;}
-.hero h1{font-size:2.75rem;margin:0 0 1rem;}
-.hero p{font-size:1.25rem;margin:.5rem 0 2rem;}
-
-.button{
-  display:inline-block;
-  background:#fff;
-  color:var(--primary-dark);
-  padding:0.75rem 1.5rem;
-  border-radius:0.5rem;
-  font-weight:600;
-  text-decoration:none;
-  box-shadow:0 2px 4px rgba(0,0,0,.08);
-  transition:background .15s;
+main{
+  padding:2rem 1.25rem 4rem;
+  max-width:800px;
+  margin:auto;
 }
-.button:hover{background:#e0e7ff;}
 
-iframe{width:100%;height:85vh;border:0;}
-footer{text-align:center;padding:2rem 1rem;font-size:.875rem;color:#64748b;}
-
-@media(max-width:640px){
-  nav{flex-direction:column;}
-  .nav-links{margin-top:.5rem;}
-  .nav-links a{margin:0 .75rem;}
-  .hero h1{font-size:2rem;}
+h1,h2,h3{
+  color:var(--primary);
+  margin:.6em 0 .3em;
+  line-height:1.2;
 }
+
+iframe{border:0;width:100%;height:90vh;}
+img   {max-width:100%;height:auto;border-radius:4px;}
