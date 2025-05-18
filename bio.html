@@ -1,15 +1,30 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Bobbert – Bio</title>
-  <link rel="stylesheet" href="style.css">
-  <style>iframe{border:0;width:100%;height:90vh}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bobbert • Bio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <style>body{background:#fff}</style>
 </head>
 <body>
   <nav>
-    <a href="/">Home</a>
-    <a href="/bio">Bio</a>
-    <a href="/terms">Terms</a>
+    <div class="nav-brand">Bobbert</div>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/bio">Bio</a>
+      <a href="/terms">Terms</a>
+    </div>
   </nav>
-  <iframe src="https://e-z.bio/bobbert"></iframe>
-</body></html>
+
+  <iframe src="https://e-z.bio/bobbert" allowfullscreen></iframe>
+
+  <footer>
+    <small>© <span id="year"></span> Bobbert. All rights reserved.</small>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
