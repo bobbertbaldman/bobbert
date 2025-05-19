@@ -2,34 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bobbert • Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bobbert</title>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Navbar -->
   <nav>
-    <div class="nav-brand">Bobbert</div>
-    <div class="nav-links">
-      <a href="/">Home</a>
-      <a href="/bio">Bio</a>
-      <a href="/terms">Terms</a>
+    <div class="container">
+      <a href="/" class="logo">Bobbert</a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/bio">Bio</a>
+        <a href="/terms">Terms</a>
+      </div>
     </div>
   </nav>
 
+  <!-- Hero Section -->
+  <header class="hero">
+    <div>
+      <h1>Hi, I’m Bobbert</h1>
+      <p>Welcome to my page. Check out my bio or read my terms below.</p>
+      <a href="/bio" class="btn">Learn More About Me</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
   <main>
-    <section class="hero">
-      <h1>Hello, I’m Bobbert</h1>
-      <p>Seller • Creator • Professional Bald Man</p>
-      <a class="button" href="/bio">See my bio</a>
-    </section>
+    <div class="container">
+      <section class="about">
+        <h2>About This Site</h2>
+        <p>This is a very cool website.</p>
+      </section>
+
+      <section class="features">
+        <div class="card">
+          <h3>My Bio</h3>
+          <p>Check out my full story.</p>
+          <a href="/bio">View Bio</a>
+        </div>
+        <div class="card">
+          <h3>Terms of Service</h3>
+          <p>Read the terms that govern interactions with me and my services.</p>
+          <a href="/terms">View Terms</a>
+        </div>
+      </section>
+    </div>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <small>© <span id="year"></span> Bobbert. All rights reserved.</small>
+    <div class="container">
+      <p>&copy; 2025 Bobbert. All rights reserved.</p>
+    </div>
   </footer>
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+
 </body>
 </html>
