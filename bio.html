@@ -1,30 +1,46 @@
+<!-- bio.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bobbert • Bio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bobbert – Bio</title>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
-  <style>body{background:#fff}</style>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <nav>
-    <div class="nav-brand">Bobbert</div>
-    <div class="nav-links">
-      <a href="/">Home</a>
-      <a href="/bio">Bio</a>
-      <a href="/terms">Terms</a>
+    <div class="container">
+      <a href="/" class="logo">Bobbert</a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/bio">Bio</a>
+        <a href="/terms">Terms</a>
+      </div>
     </div>
   </nav>
 
-  <iframe src="https://e-z.bio/bobbert" allowfullscreen></iframe>
+  <main class="container">
+    <iframe 
+      src="https://e-z.bio/bobbert" 
+      title="Bobbert’s e-z.bio profile">
+    </iframe>
+  </main>
 
   <footer>
-    <small>© <span id="year"></span> Bobbert. All rights reserved.</small>
+    <div class="container">
+      <p>&copy; 2025 Bobbert. All rights reserved.</p>
+    </div>
   </footer>
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+
 </body>
 </html>
